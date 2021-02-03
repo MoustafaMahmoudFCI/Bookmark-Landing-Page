@@ -138,8 +138,11 @@ a {
 }
 
 .header .nav__social {
-  text-align: center;
-  margin-top: 4rem;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 2rem;
 }
 
 .header .nav__social a {
