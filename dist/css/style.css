@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem;
+  color: #9194a1;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(37, 43, 70, 0.85);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.btn {
+  padding: .5rem 1.8rem;
+  border: 2px solid #252b46;
+  border-radius: 5px;
+  color: #252b46;
+}
+
+.btn-red {
+  color: #fff;
+  border: 2px solid #fa5757;
+  background-color: #fa5757;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-red:hover {
+  color: #252b46;
+  background-color: transparent;
+  border: 2px solid #252b46;
+}
+
+.header {
+  position: relative;
+  z-index: 100;
+}
+
+.header .nav {
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav__menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.header .nav__menu.show-menu {
+  top: 3rem;
+}
+
+.header .nav__list {
+  width: 100%;
+  padding: 1rem 2rem 0;
+  text-align: center;
+}
+
+.header .nav__item {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.header .nav__item::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(145, 148, 161, 0.4);
+}
+
+.header .nav__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.header .nav__link {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header .nav .btn {
+  display: inline-block;
+  border: 2px solid #fff;
+  width: 100%;
+}
+
+.header .nav__social {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.header .nav__social a {
+  color: #fff;
+  display: inline-block;
+}
+
+.header .nav__social a:first-child {
+  margin-right: 2rem;
+}
+
+.header .nav__social a i {
+  font-size: 1.5rem;
+}
+
+.header .nav__toggle {
+  color: #252b46;
+  cursor: pointer;
+}
+
+.header.open-menu .nav__logo svg g path {
+  fill: #fff;
+}
+
+.header.open-menu .nav__toggle {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

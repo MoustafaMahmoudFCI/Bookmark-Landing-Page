@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: $font-medium;
+    color: $grayishBlue;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// class layout
+.container {
+    padding: 0 1rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($veryDarkBlue, .85);
+    z-index: 2;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.btn {
+    padding: .5rem 1.8rem;
+    border: 2px solid $veryDarkBlue;
+    border-radius: 5px;
+    color: $veryDarkBlue;
+}
+
+.btn-red {
+    color: $white;
+    border: 2px solid $softRed;
+    background-color: $softRed;
+    transition: .3s;
+
+    &:hover {
+        color: $veryDarkBlue;
+        background-color: transparent;
+        border: 2px solid $veryDarkBlue;
+    }
+}
