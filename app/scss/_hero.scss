@@ -1,0 +1,86 @@
+.hero {
+    padding: 1.5rem 0;
+    overflow: hidden;
+
+    .container {
+        @include breakpoints-up(lg) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            align-items: center;
+        }
+    }
+
+    &__img {
+        position: relative;
+        background-image: url('/images/illustration-hero.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        width: 100%;
+        margin-bottom: 2.5rem;
+        min-height: 18rem;
+
+        @media screen and(min-width:475px) {
+            min-height: 24rem;
+        }
+
+        @include breakpoints-up(md) {
+            min-height: 28rem;
+            background-size: 90%;
+        }
+
+        @include breakpoints-up(lg) {
+            order: 2;
+            background-position: 30px center;
+            background-size: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -20%;
+            width: 90%;
+            height: 75%;
+            background-color: $softBlue;
+            border-radius: 0 0 0 5rem;
+            z-index: -1;
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        @include breakpoints-up(lg) {
+            order: 1;
+            text-align: left;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: $font-large;
+
+        @include breakpoints-up(lg) {
+            font-size: $font-large + .5rem;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 2rem;
+        line-height: 1.6;
+
+        @include breakpoints-up(md) {
+            font-size: $font-large - .75rem;
+        }
+
+    }
+
+    &__btns {
+        .btn {
+            font-size: $font-small;
+            padding: .5rem 1rem;
+        }
+    }
+}
