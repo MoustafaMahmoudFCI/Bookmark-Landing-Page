@@ -32,7 +32,32 @@ a {
 
 // class layout
 .container {
-    padding: 0 1rem;
+    margin: 0 auto;
+
+    @include breakpoints-down(sm) {
+        padding: 0 1.5rem;
+    }
+
+    @include breakpoints-up(sm) {
+        // padding: 0 1.5rem;
+        max-width: map-get($container-max-widths, 'sm');
+    }
+
+    @include breakpoints-up(md) {
+        max-width: map-get($container-max-widths, 'md');
+    }
+
+    @include breakpoints-up(lg) {
+        max-width: map-get($container-max-widths, 'lg');
+    }
+
+    @include breakpoints-up(xl) {
+        max-width: map-get($container-max-widths, 'xl');
+    }
+
+    @include breakpoints-up(xxl) {
+        max-width: map-get($container-max-widths, 'xxl');
+    }
 }
 
 .overlay {
@@ -58,13 +83,13 @@ a {
 }
 
 .btn-red {
-    color: $white;
+    color: $white !important;
     border: 2px solid $softRed;
     background-color: $softRed;
     transition: .3s;
 
     &:hover {
-        color: $veryDarkBlue;
+        color: $veryDarkBlue !important;
         background-color: transparent;
         border: 2px solid $veryDarkBlue;
     }
