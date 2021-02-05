@@ -639,6 +639,8 @@ h3 {
           box-shadow: 0 6px 14px rgba(37, 43, 70, 0.1);
   margin-bottom: 2rem;
   padding: 1.5rem 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -675,5 +677,10 @@ h3 {
 .extension__card .card__dots {
   display: block;
   margin-bottom: 1.5rem;
+}
+
+.extension__card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 /*# sourceMappingURL=style.css.map */

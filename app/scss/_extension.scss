@@ -13,6 +13,7 @@
         box-shadow: 0 6px 14px rgba($veryDarkBlue, .1);
         margin-bottom: 2rem;
         padding: 1.5rem 0;
+        transition: all 200ms ease-in-out;
 
         @include breakpoints-up(md) {
             &:not(:last-child) {
@@ -49,7 +50,10 @@
                 display: block;
                 margin-bottom: 1.5rem;
             }
+        }
 
+        &:hover {
+            transform: scale(1.05);
         }
     }
 }
