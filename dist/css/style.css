@@ -137,6 +137,8 @@ h3 {
   border-radius: 5px;
   color: #252b46;
   display: inline-block;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-red,
@@ -171,7 +173,7 @@ h3 {
 
 .btn-gray {
   color: #252b46 !important;
-  border: 2px solid rgba(145, 148, 161, 0.15);
+  border: 2px solid rgba(145, 148, 161, 0.05);
   background-color: rgba(145, 148, 161, 0.15);
 }
 

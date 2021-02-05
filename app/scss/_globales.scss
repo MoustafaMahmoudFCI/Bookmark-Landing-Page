@@ -125,6 +125,7 @@ h3 {
     border-radius: 5px;
     color: $veryDarkBlue;
     display: inline-block;
+    box-shadow: 0 4px 12px rgba(#000, .15);
 }
 
 .btn-red,
@@ -158,7 +159,7 @@ h3 {
 
 .btn-gray {
     color: $veryDarkBlue !important;
-    border: 2px solid rgba($grayishBlue, .15);
+    border: 2px solid rgba($grayishBlue, .05);
     background-color: rgba($grayishBlue, .15);
 
     &:hover {
