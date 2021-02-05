@@ -23,3 +23,31 @@ function showMobileMenu() {
     toggleIcon();
 }
 toggleBtn.addEventListener('click', showMobileMenu);
+
+// features 
+// show tab
+
+function removeActiveClass(ele) {
+    const items = ele.parentElement.children;
+    for (let i = 0; i < items.length; i++) {
+        items[i].classList.remove('active');
+    }
+}
+
+function showTab() {
+    const elements = document.querySelectorAll('#features-header li');
+    elements.forEach(ele => {
+        ele.addEventListener('click', (e) => {
+            // console.log(e);
+            removeActiveClass(e.target);
+            e.target.classList.add('active');
+            let itemID = e.target.getAttribute('data-id');
+            let itemContent = document.querySelector(`#${itemID}`);
+            // console.log(itemID);
+            // console.log(itemContent);
+            removeActiveClass(itemContent);
+            itemContent.classList.add('active');
+        })
+    })
+}
+showTab();

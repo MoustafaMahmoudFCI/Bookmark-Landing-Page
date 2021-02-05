@@ -71,6 +71,38 @@ h3 {
     }
 }
 
+.section {
+    padding: 3rem 0;
+}
+
+.section-title,
+.section-subtitle {
+    text-align: center;
+}
+
+.section-title {
+    font-size: $font-large;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+
+    @include breakpoints-up(md) {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -92,6 +124,7 @@ h3 {
     border: 2px solid $veryDarkBlue;
     border-radius: 5px;
     color: $veryDarkBlue;
+    display: inline-block;
 }
 
 .btn-red,
