@@ -1,0 +1,56 @@
+.extension {
+    &__content {
+        @include breakpoints-up(md) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__card {
+        text-align: center;
+        box-shadow: 0 6px 14px rgba($veryDarkBlue, .1);
+        margin-bottom: 2rem;
+        padding: 1.5rem 0;
+
+        @include breakpoints-up(md) {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+
+        @include breakpoints-up(lg) {
+            &:nth-child(2) {
+                transform: translateY(2rem);
+            }
+
+            &:last-of-type {
+                transform: translateY(4rem);
+            }
+        }
+
+        .card {
+            &__img {
+                width: 8rem;
+                margin-bottom: 2rem;
+            }
+
+            &__title {
+                margin-bottom: 1rem;
+            }
+
+            &__subtitle {
+                display: inline-block;
+                margin-bottom: 2rem;
+            }
+
+            &__dots {
+                display: block;
+                margin-bottom: 1.5rem;
+            }
+
+            &__btn {}
+        }
+    }
+}

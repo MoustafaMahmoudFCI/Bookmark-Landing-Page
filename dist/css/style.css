@@ -104,7 +104,7 @@ h3 {
 @media screen and (min-width: 768px) {
   .section-subtitle {
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
   }
 }
 
@@ -615,5 +615,65 @@ h3 {
   .features__item .item__desc {
     margin-bottom: 2rem;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .extension__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.extension__card {
+  text-align: center;
+  -webkit-box-shadow: 0 6px 14px rgba(37, 43, 70, 0.1);
+          box-shadow: 0 6px 14px rgba(37, 43, 70, 0.1);
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .extension__card:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .extension__card:nth-child(2) {
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+  .extension__card:last-of-type {
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+}
+
+.extension__card .card__img {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.extension__card .card__title {
+  margin-bottom: 1rem;
+}
+
+.extension__card .card__subtitle {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.extension__card .card__dots {
+  display: block;
+  margin-bottom: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
