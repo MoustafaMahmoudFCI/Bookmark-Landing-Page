@@ -38,16 +38,30 @@ function showTab() {
     const elements = document.querySelectorAll('#features-header li');
     elements.forEach(ele => {
         ele.addEventListener('click', (e) => {
-            // console.log(e);
             removeActiveClass(e.target);
             e.target.classList.add('active');
             let itemID = e.target.getAttribute('data-id');
             let itemContent = document.querySelector(`#${itemID}`);
-            // console.log(itemID);
-            // console.log(itemContent);
             removeActiveClass(itemContent);
             itemContent.classList.add('active');
         })
     })
 }
 showTab();
+
+// Frequently asked question 
+
+const faqQuestions = document.querySelectorAll('.faq__question');
+
+function toggleAnswer() {
+    const btnStatus = this.getAttribute('aria-expanded');
+    for (let i = 0; i < faqQuestions.length; i++) {
+        faqQuestions[i].setAttribute('aria-expanded', false);
+    }
+    if (btnStatus == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+faqQuestions.forEach(item => {
+    item.addEventListener('click', toggleAnswer);
+})
