@@ -81,8 +81,11 @@ h3 {
 }
 
 .section-title {
-  font-size: $font-large;
+  font-size: $font-large - 0.4;
   margin-bottom: 1rem;
+  @include breakpoints-up(md) {
+    font-size: $font-large;
+  }
 }
 
 .section-subtitle {
@@ -109,7 +112,7 @@ h3 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba($veryDarkBlue, 0.85);
+  background-color: rgba($veryDarkBlue, 0.95);
   z-index: 2;
   visibility: hidden;
 }
