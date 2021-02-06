@@ -1,0 +1,72 @@
+.footer {
+  background-color: $veryDarkBlue;
+  color: $white;
+  text-align: center;
+  font-size: $font-small - 0.2;
+  .container {
+    @include breakpoints-up(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo {
+    margin-bottom: 2.5rem;
+    display: block;
+    @include breakpoints-up(md) {
+      margin-bottom: 0;
+    }
+    svg path {
+      fill: $white;
+    }
+  }
+  &__links {
+    margin-bottom: 2.5rem;
+    @include breakpoints-up(md) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    li {
+      text-transform: uppercase;
+      &:not(:last-child) {
+        margin-right: 1rem;
+        margin-bottom: 1.3rem;
+        @include breakpoints-up(md) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    a {
+      color: inherit;
+      letter-spacing: 2px;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include breakpoints-down(md) {
+      max-width: 15rem;
+      margin: 0 auto;
+    }
+    a {
+      color: inherit;
+      font-size: $font-large - 0.4;
+      @include breakpoints-up(md) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+footer {
+  padding: 0.5rem 0;
+  text-align: center;
+  .attribution {
+    font-size: $font-small - 0.3;
+    a {
+      color: $softBlue;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,46 +1,48 @@
 // Colors
 
 //  Primary
-$softBlue: hsl(231, 69%, 60%);
-$softRed: hsl(0, 94%, 66%);
+$softBlue: #5368df;
+$softRed: #fa5757;
 
 //  Neutral
-$grayishBlue: hsl(229, 8%, 60%);
-$veryDarkBlue: rgb(37, 43, 70);
-$white:#fff;
+$grayishBlue: #9194a1;
+$veryDarkBlue: #252b46;
+$white: #fff;
 
 // Fonts
-$font-small:1rem;
-$font-medium:1.125rem;
-$font-large:2rem;
+$font-small: 1rem;
+$font-medium: 1.125rem;
+$font-large: 2rem;
 
 // Font Weights
-$font-weight-regular:400;
-$font-weight-bold:500;
+$font-weight-regular: 400;
+$font-weight-bold: 500;
 
 // z-index
-$z-index:100;
-
+$z-index: 100;
 
 // grid breakpoints
-$grid-breakpoints-up: (xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px,
+$grid-breakpoints-up: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
 );
 // breakpoints down
-$grid-breakpoints-down: (sm: 575.98px,
-    md: 767.98px,
-    lg: 991.98px,
-    xl: 1199.98px,
-    xxl: 1399.98px,
+$grid-breakpoints-down: (
+  sm: 575.98px,
+  md: 767.98px,
+  lg: 991.98px,
+  xl: 1199.98px,
+  xxl: 1399.98px,
 );
 // container max width (max width for each container
-$container-max-widths: (sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
-    xxl: 1320px,
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
 );

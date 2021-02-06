@@ -792,4 +792,104 @@ h3 {
   cursor: pointer;
   padding: 0.9rem 1rem;
 }
+
+.footer {
+  background-color: #252b46;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 2.5rem;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    margin-bottom: 0;
+  }
+}
+
+.footer__logo svg path {
+  fill: #fff;
+}
+
+.footer__links {
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+
+.footer__links li {
+  text-transform: uppercase;
+}
+
+.footer__links li:not(:last-child) {
+  margin-right: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__links li:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__links a {
+  color: inherit;
+  letter-spacing: 2px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer__social {
+    max-width: 15rem;
+    margin: 0 auto;
+  }
+}
+
+.footer__social a {
+  color: inherit;
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social a {
+    margin-right: 1rem;
+  }
+}
+
+footer {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+footer .attribution {
+  font-size: 0.7rem;
+}
+
+footer .attribution a {
+  color: #5368df;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
