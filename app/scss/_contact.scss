@@ -4,7 +4,7 @@
   text-align: center;
 
   .container {
-    max-width: 430px;
+    max-width: 30rem;
   }
 
   &__title {
@@ -29,12 +29,15 @@
     @include breakpoints-up(md) {
       display: grid;
       grid-template-columns: 1fr auto;
+      align-items: center;
       gap: 0.5rem;
     }
 
     .form__input {
       margin-right: 0.5rem;
-      margin-bottom: 0.5rem;
+      @include breakpoints-down(md) {
+        margin-bottom: 0.5rem;
+      }
       input {
         display: block;
         width: 100%;
