@@ -102,7 +102,7 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .section-subtitle {
-    width: 75%;
+    width: 50%;
     margin: 0 auto 2rem;
   }
 }
@@ -146,6 +146,12 @@ h3 {
   transition: 0.3s;
 }
 
+.btn-red:hover,
+.btn-blue:hover,
+.btn-gray:hover {
+  background-color: #fff;
+}
+
 .btn-red {
   border: 2px solid #fa5757;
   background-color: #fa5757;
@@ -154,7 +160,6 @@ h3 {
 .btn-red:hover {
   border: 2px solid #fa5757;
   color: #fa5757 !important;
-  background-color: transparent;
 }
 
 .btn-blue {
@@ -165,7 +170,6 @@ h3 {
 .btn-blue:hover {
   border: 2px solid #5368df;
   color: #5368df !important;
-  background-color: transparent;
 }
 
 .btn-gray {
@@ -176,7 +180,6 @@ h3 {
 
 .btn-gray:hover {
   border: 2px solid #252b46;
-  background-color: transparent;
 }
 
 .header {
@@ -708,5 +711,85 @@ h3 {
 
 .faq .btn {
   margin-top: 2.5rem;
+}
+
+.contact {
+  background-color: #5368df;
+  color: #fff;
+  text-align: center;
+}
+
+.contact .container {
+  max-width: 430px;
+}
+
+.contact__title {
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.contact__subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__subtitle {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem;
+  }
+}
+
+.contact__form .form__input {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__form .form__input input {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  outline: none;
+  color: #9194a1;
+}
+
+.contact__form .form__input input:focus {
+  outline: none;
+}
+
+.contact__form .invalid {
+  background-color: #fa5757;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.contact__form .invalid__feedback {
+  text-align: left;
+  padding: 0.2rem 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.contact .btn {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  cursor: pointer;
+  padding: 0.9rem 1rem;
 }
 /*# sourceMappingURL=style.css.map */
