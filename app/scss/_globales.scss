@@ -1,169 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Rubik', sans-serif;
-    font-size: $font-medium;
-    color: $grayishBlue;
-    line-height: 1.3;
+  font-family: "Rubik", sans-serif;
+  font-size: $font-medium;
+  color: $grayishBlue;
+  line-height: 1.3;
 }
 
 ul {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 h1,
 h2,
 h3 {
-    color: $veryDarkBlue;
+  color: $veryDarkBlue;
 }
 
 // class layout
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    @include breakpoints-down(sm) {
-        padding: 0 1.5rem;
-    }
+  @include breakpoints-down(sm) {
+    padding: 0 1.5rem;
+  }
 
-    @include breakpoints-up(sm) {
-        max-width: map-get($container-max-widths, 'sm');
-    }
+  @include breakpoints-up(sm) {
+    max-width: map-get($container-max-widths, "sm");
+  }
 
-    @include breakpoints-up(md) {
-        max-width: map-get($container-max-widths, 'md');
-    }
+  @include breakpoints-up(md) {
+    max-width: map-get($container-max-widths, "md");
+  }
 
-    @include breakpoints-up(lg) {
-        max-width: map-get($container-max-widths, 'lg');
-    }
+  @include breakpoints-up(lg) {
+    max-width: map-get($container-max-widths, "lg");
+  }
 
-    @include breakpoints-up(xl) {
-        max-width: map-get($container-max-widths, 'xl');
-    }
+  @include breakpoints-up(xl) {
+    max-width: map-get($container-max-widths, "xl");
+  }
 
-    @include breakpoints-up(xxl) {
-        max-width: map-get($container-max-widths, 'xxl');
-    }
+  @include breakpoints-up(xxl) {
+    max-width: map-get($container-max-widths, "xxl");
+  }
 }
 
 .section {
-    padding: 3rem 0;
+  padding: 3rem 0;
 }
 
 .section-title,
 .section-subtitle {
-    text-align: center;
+  text-align: center;
 }
 
 .section-title {
-    font-size: $font-large;
-    margin-bottom: 1rem;
+  font-size: $font-large;
+  margin-bottom: 1rem;
 }
 
 .section-subtitle {
-    margin-bottom: 2rem;
-    line-height: 1.5;
+  margin-bottom: 2rem;
+  line-height: 1.5;
 
-    @include breakpoints-up(md) {
-        width: 75%;
-        margin: 0 auto 2rem;
-    }
+  @include breakpoints-up(md) {
+    width: 75%;
+    margin: 0 auto 2rem;
+  }
 }
 
 .d-none {
-    display: none;
+  display: none;
 }
 
 .d-block {
-    display: block;
+  display: block;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba($veryDarkBlue, .85);
-    z-index: 2;
-    visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($veryDarkBlue, 0.85);
+  z-index: 2;
+  visibility: hidden;
 }
 
 .show {
-    visibility: visible;
+  visibility: visible;
 }
 
 // Buttons
 .btn {
-    padding: .5rem 1.8rem;
-    border: 2px solid $veryDarkBlue;
-    border-radius: 5px;
-    color: $veryDarkBlue;
-    display: inline-block;
-    box-shadow: 0 4px 12px rgba(#000, .15);
+  padding: 0.5rem 1.8rem;
+  border: 2px solid $veryDarkBlue;
+  border-radius: 5px;
+  color: $veryDarkBlue;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(#000, 0.15);
 }
 
 .btn-red,
 .btn-blue,
 .btn-gray {
-    color: $white !important;
-    transition: .3s;
+  color: $white !important;
+  transition: 0.3s;
 }
 
 .btn-red {
-    border: 2px solid $softRed;
-    background-color: $softRed;
+  border: 2px solid $softRed;
+  background-color: $softRed;
 
-    &:hover {
-        border: 2px solid $softRed;
-        color: $softRed !important;
-        background-color: transparent;
-    }
+  &:hover {
+    border: 2px solid $softRed;
+    color: $softRed !important;
+    background-color: transparent;
+  }
 }
 
 .btn-blue {
-    border: 2px solid $softBlue;
-    background-color: $softBlue;
+  border: 2px solid $softBlue;
+  background-color: $softBlue;
 
-    &:hover {
-        border: 2px solid $softBlue;
-        color: $softBlue !important;
-        background-color: transparent;
-    }
+  &:hover {
+    border: 2px solid $softBlue;
+    color: $softBlue !important;
+    background-color: transparent;
+  }
 }
 
 .btn-gray {
-    color: $veryDarkBlue !important;
-    border: 2px solid rgba($grayishBlue, .05);
-    background-color: rgba($grayishBlue, .15);
+  color: $veryDarkBlue !important;
+  border: 2px solid rgba($grayishBlue, 0.05);
+  background-color: rgba($grayishBlue, 0.15);
 
-    &:hover {
-        border: 2px solid $veryDarkBlue;
-        background-color: transparent;
-    }
+  &:hover {
+    border: 2px solid $veryDarkBlue;
+    background-color: transparent;
+  }
 }
