@@ -115,7 +115,8 @@
                 color: $veryDarkBlue;
                 transition: color 200ms ease-in-out;
 
-                &:hover {
+                &:hover,
+                &.active {
                     color: $softRed;
                 }
 
