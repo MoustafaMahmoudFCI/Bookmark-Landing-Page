@@ -83,6 +83,7 @@ h3 {
 .section-title {
   font-size: $font-large - 0.4;
   margin-bottom: 1rem;
+
   @include breakpoints-up(md) {
     font-size: $font-large;
   }
@@ -96,6 +97,10 @@ h3 {
     width: 50%;
     margin: 0 auto 2rem;
   }
+}
+
+.noscroll {
+  overflow-y: hidden;
 }
 
 .d-none {
@@ -136,6 +141,7 @@ h3 {
 .btn-gray {
   color: $white !important;
   transition: 0.3s;
+
   &:hover {
     background-color: $white;
   }
