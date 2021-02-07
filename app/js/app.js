@@ -30,7 +30,7 @@ function linkAction() {
   document.querySelector(".overlay").classList.remove("show");
   document.body.classList.remove("noscroll");
   toggleIcon();
-}
+
 links.forEach((el) => {
   el.addEventListener("click", linkAction);
 });
