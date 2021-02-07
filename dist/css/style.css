@@ -949,14 +949,13 @@ h3 {
 }
 
 .footer__links li:not(:last-child) {
-  margin-right: 1rem;
   margin-bottom: 1.3rem;
 }
 
 @media screen and (min-width: 768px) {
   .footer__links li:not(:last-child) {
+    margin-right: 1rem;
     margin-bottom: 0;
-    margin-right: 0;
   }
 }
 

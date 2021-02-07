@@ -38,12 +38,11 @@
       text-transform: uppercase;
 
       &:not(:last-child) {
-        margin-right: 1rem;
         margin-bottom: 1.3rem;
 
         @include breakpoints-up(md) {
+          margin-right: 1rem;
           margin-bottom: 0;
-          margin-right: 0;
         }
       }
     }
