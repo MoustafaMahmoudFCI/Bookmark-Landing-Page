@@ -14,7 +14,7 @@ function toggleIcon() {
 function showMobileMenu() {
   const menu = document.querySelector("#nav-menu"),
     overlay = document.querySelector(".overlay");
-  document.body.classList.add("noscroll");
+  document.body.classList.toggle("noscroll");
   header.classList.toggle("open-menu");
   menu.classList.toggle("show-menu");
   overlay.classList.toggle("show");
@@ -24,16 +24,18 @@ toggleBtn.addEventListener("click", showMobileMenu);
 
 // remove mobile menu when click link
 const links = document.querySelectorAll(".nav__menu .nav__link");
+
 function linkAction() {
   document.getElementById("header").classList.remove("open-menu");
   document.getElementById("nav-menu").classList.remove("show-menu");
   document.querySelector(".overlay").classList.remove("show");
   document.body.classList.remove("noscroll");
   toggleIcon();
-
+}
 links.forEach((el) => {
   el.addEventListener("click", linkAction);
 });
+
 // active link scroll
 const sections = document.querySelectorAll("section[id]");
 

@@ -135,10 +135,14 @@ h3 {
   background-color: rgba(37, 43, 70, 0.95);
   z-index: 2;
   visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 .show {
   visibility: visible;
+  opacity: 1;
 }
 
 .btn {
@@ -591,8 +595,14 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .features__item .item__img {
-    background-position: center 0;
+    background-position: center bottom;
     background-size: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .features__item .item__img {
+    background-size: 100%;
   }
 }
 
@@ -616,7 +626,8 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .features__item .item__img::before {
-    height: 80%;
+    height: 75%;
+    bottom: -7%;
   }
 }
 

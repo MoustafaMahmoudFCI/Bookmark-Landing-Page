@@ -68,14 +68,15 @@
     }
   }
 
-  &__content {
-  }
+  &__content {}
 
   &__item {
     display: none;
+
     @media screen and (max-width: 475px) {
       margin-top: -5rem;
     }
+
     &.active {
       display: block;
 
@@ -100,9 +101,14 @@
         background-position: 0 bottom;
         position: relative;
         margin-bottom: 5rem;
+
         @include breakpoints-up(md) {
-          background-position: center 0;
+          background-position: center bottom;
           background-size: 80%;
+        }
+
+        @include breakpoints-up(lg) {
+          background-size: 100%;
         }
 
         &::before {
@@ -115,11 +121,14 @@
           background-color: $softBlue;
           border-radius: 0 0 5rem 0;
           z-index: -1;
+
           @include breakpoints-up(sm) {
             height: 60%;
           }
+
           @include breakpoints-up(md) {
-            height: 80%;
+            height: 75%;
+            bottom: -7%;
           }
         }
       }
